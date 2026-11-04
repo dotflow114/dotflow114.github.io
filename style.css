@@ -18,7 +18,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 h1,h2,h3{font-weight:400;letter-spacing:-.02em}
 
 /* ===== 이미지 자리 (실제 이미지: background-image:url(...) 로 교체) ===== */
-.ph-1{background: url("../img/k-1.png") center / cover no-repeat;}
+.ph-1{background: url("./img/k-1.png") center / cover no-repeat;}
 .ph-2{background: url("../files/k-2.png") center / cover no-repeat;}
 .ph-3{background: url("../files/k-3.png") center / cover no-repeat;}
 .ph-4{background: url("../files/k-4.png") center / cover no-repeat;}

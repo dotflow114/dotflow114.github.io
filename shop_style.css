@@ -77,10 +77,10 @@ hr{border:0;border-top:1px solid var(--line);margin:clamp(50px,9vw,110px) 0 clam
 
 .gallery{display:grid;grid-template-columns:1.55fr 1fr;grid-template-rows:1fr 1fr;gap:clamp(14px,3vw,32px);aspect-ratio:1000/830}
 .gallery>div{overflow:hidden}
-.frost{grid-row:1/3;background:linear-gradient(#f3f2f2,#e6e4e4);position:relative; background: url("../files/img/h/web_size/shop_pro1.png") center/cover no-repeat;}
+.frost{grid-row:1/3;background:linear-gradient(#f3f2f2,#e6e4e4);position:relative; background: url("../files/shop_pro1.png") center/cover no-repeat;}
 
-.bub1{background: url("../files/img/h/web_size/shop_pro4.png") center/cover no-repeat;}
-.bub2{background: url("../files/img/h/web_size/shop_pro3.png") center/cover no-repeat;}
+.bub1{background: url("../files/shop_pro4.png") center/cover no-repeat;}
+.bub2{background: url("../files/shop_pro3.png") center/cover no-repeat;}
 
 
 @media (max-width:700px){

@@ -36,6 +36,27 @@ main{top: -50px; display: block; position: relative;}
 .ph-12{background: url("./img/h-6.png") center / cover no-repeat;}
 
 
+
+
+
+/* ===== 혜린 이미지 자리 (실제 이미지: background-image:url(...) 로 교체) ===== */
+.h_ph-1{background: url("./img/h-1.png") center / cover no-repeat;}
+.h_ph-2{background: url("./img/h-2.png") center / cover no-repeat;}
+.h_ph-3{background: url("./img/h-3.png") center / cover no-repeat;}
+.h_ph-4{background: url("./img/h-4.png") center / cover no-repeat;}
+.h_ph-5{background: url("./img/h-5.png") center / cover no-repeat;}
+.h_ph-6{background: url("./img/h-6.png") center / cover no-repeat;}
+.h_ph-7{background: url("./img/k_sec3-2.png") center / cover no-repeat;}
+.h_ph-8{background: url("./img/k_sec3-3.png") center / cover no-repeat;}
+.h_ph-9{background: url("./img/h-3.png") center / cover no-repeat;}
+.h_ph-10{background: url("./img/h-4.png") center / cover no-repeat;}
+.h_ph-11{background: url("./img/h-5.png") center / cover no-repeat;}
+.h_ph-12{background: url("./img/h-6.png") center / cover no-repeat;}
+
+
+
+
+
 /* ===== 공통 ===== */
 .pill{display:inline-block;padding:10px 22px;border-radius:999px;background:var(--white);color:var(--ink);font-size:13px;transition:transform .2s}
 .pill:hover{transform:translateY(-2px)}

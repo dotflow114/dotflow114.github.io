@@ -17,6 +17,10 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 :focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 h1,h2,h3{font-weight:400;letter-spacing:-.02em}
 
+
+main{top: -20px; display: block; position: relative;}
+
+
 /* ===== 이미지 자리 (실제 이미지: background-image:url(...) 로 교체) ===== */
 .ph-1{background: url("./img/k-1.png") center / cover no-repeat;}
 .ph-2{background: url("./img/k-2.png") center / cover no-repeat;}

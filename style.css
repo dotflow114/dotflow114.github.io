@@ -68,7 +68,7 @@ main{top: -50px; display: block; position: relative;}
   left: -0px;
   width: 100%; /* 헤더의 패딩을 무시하고 가로 100% 꽉 채움 */
   height: 200px; /* 어닝 높이 (필요에 따라 조절) */
-  background-image: url('./img2/awning4.png'); 
+  background-image: url('./img/awning4.png'); 
   background-size: cover; /* 좌우상하 빈틈없이 꽉 채우기 */
   background-position: top center;
   background-repeat: no-repeat;
@@ -82,7 +82,7 @@ main{top: -50px; display: block; position: relative;}
   left: -0px;
   width: 100%; /* 헤더의 패딩을 무시하고 가로 100% 꽉 채움 */
   height: 125px; /* 어닝 높이 (필요에 따라 조절) */
-  background-image: url('./img2/awning3.png'); 
+  background-image: url('./img/awning3.png'); 
   background-size: cover; /* 좌우상하 빈틈없이 꽉 채우기 */
   background-position: top center;
   background-repeat: no-repeat;
@@ -92,7 +92,7 @@ main{top: -50px; display: block; position: relative;}
 
 
 /* ===== 1단락: 히어로 슬라이드 ===== */
-.hero{position:relative;height:min(94vh,800px);min-height:420px;overflow:hidden;color:#fff; background: url('./img2/main_1_bg.png'); background-size: 70% 70%; top:-50px; }
+.hero{position:relative;height:min(94vh,800px);min-height:420px;overflow:hidden;color:#fff; background: url('./img/main_1_bg.png'); background-size: 70% 70%; top:-50px; }
 .hero-slide{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;opacity:0;visibility:hidden;transition:opacity .8s,visibility .8s}
 .hero-slide.is-active{opacity:1;visibility:visible}
 .hero-img{background-size:cover;background-position:center}

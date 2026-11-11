@@ -1,25 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* ===== 상단 안내 문구 슬라이드 ===== */
-  const messages = [
-    "free shipping for orders over 30€",
-    "free samples with every order",
-    "refill your favorites and save 10%"
-  ];
-  const tickerText = document.querySelector(".ticker-text");
-  let tIndex = 0;
-  const showMessage = (dir) => {
-    tIndex = (tIndex + dir + messages.length) % messages.length;
-    tickerText.classList.add("fade");
-    setTimeout(() => {
-      tickerText.textContent = messages[tIndex];
-      tickerText.classList.remove("fade");
-    }, 250);
-  };
-  document.querySelectorAll(".ticker-btn").forEach((btn) =>
-    btn.addEventListener("click", () => showMessage(Number(btn.dataset.dir)))
-  );
-
   /* ===== 모바일 메뉴 ===== */
   const burger = document.getElementById("burger");
   const nav = document.getElementById("nav");
@@ -60,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
     startAuto();
   });
 
-  // 히어로 영역 터치 스와이프
   const hero = document.querySelector("[data-hero]");
   let hx = null;
   hero.addEventListener("touchstart", (e) => (hx = e.touches[0].clientX), { passive: true });
@@ -72,11 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   startAuto();
 
- /* ===== 2단락: 베스트셀러 슬라이드 ===== */
+  /* ===== 2단락: 베스트셀러 슬라이드 ===== */
   const track = document.getElementById("track");
   const bar = document.getElementById("progressBar");
   
-  // 현재 화면에 노출된(display: none이 아닌) 카드만 배열로 가져오는 함수
   const getVisibleCards = () => Array.from(track.children).filter(c => c.style.display !== "none");
   let pIndex = 0;
 
@@ -93,11 +71,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     const total = maxIndex() + 1;
-    bar.style.width = `${100 / total}%`;
-    bar.style.left = `${(100 / total) * pIndex}%`;
+    if (total > 0) {
+      bar.style.width = `${100 / total}%`;
+      bar.style.left = `${(100 / total) * pIndex}%`;
+    }
   };
 
-  // 마우스 드래그 + 터치 스와이프
   let startX = null, moved = 0;
   const onStart = (x) => { startX = x; moved = 0; track.classList.add("dragging"); };
   const onMove = (x) => {
@@ -124,15 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
   track.addEventListener("touchend", onEnd);
   window.addEventListener("resize", updateTrack);
 
-// all / best sellers / sets 탭 기능
+  // all / best sellers / sets 탭 기능
   document.querySelectorAll(".tab").forEach((tab) =>
     tab.addEventListener("click", () => {
-      // 탭 활성화 상태 변경
       document.querySelectorAll(".tab").forEach((t) => t.classList.toggle("is-active", t === tab));
-      
       const targetCategory = tab.dataset.tab;
       
-      // 'all'이면 모두 표시, 아니면 일치하는 카테고리만 표시
       Array.from(track.children).forEach((card) => {
         if (targetCategory === "all" || card.dataset.category === targetCategory) {
           card.style.display = ""; 
@@ -141,15 +117,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // 탭 변경 시 슬라이드 위치를 맨 처음으로 초기화
       pIndex = 0;
       updateTrack();
     })
   );
 
   updateTrack();
-
-  
 });
-
-

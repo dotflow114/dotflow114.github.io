@@ -8,18 +8,7 @@
 </head>
 <body>
 
-<!-- 상단 안내 슬라이드 -->
-<!---div class="topbar" data-ticker>
-  <button class="ticker-btn" data-dir="-1" aria-label="이전">&larr;</button>
-  <p class="ticker-text" aria-live="polite">free shipping for orders over 30€</p>
-  <button class="ticker-btn" data-dir="1" aria-label="다음">&rarr;</button>
-</div--->
-
-
-
-
 <header class="header">
-  
   <a href="./index.html" class="logo">BANCHIK</a>
   <nav class="nav" id="nav">
     <a href="./index.html">CLEANSER</a>
@@ -27,83 +16,63 @@
     <a href="./index3.html">ERUM</a>
     <a href="./index4.html">CREAM</a>
   </nav>
-  <div class="tools">
-    <span class="currency">eur € ▾</span>
-    <button aria-label="계정">&#9786;</button>
-    <button aria-label="검색">&#9906;</button>
-    <button aria-label="장바구니">&#9635;</button>
-    <button class="burger" id="burger" aria-label="메뉴" aria-expanded="false"><i></i><i></i></button>
-  </div>
+  <!-- 모바일 동작을 위해 햄버거 메뉴만 남기고 우측 도구(장바구니 등) 제거 -->
+  <button class="burger" id="burger" aria-label="메뉴" aria-expanded="false"><i></i><i></i></button>
 </header>
 
 <main>
-
-
-
-
-
-
-<!-- 1단락: 히어로 슬라이드 -->
+  <!-- 1단락: 히어로 슬라이드 -->
   <section class="hero" data-hero>
     <div class="hero-slides">
-
       <article class="hero-slide is-active">
-        <div class="hero-img ph-1"></div> <!-- 이미지 1개만 남김 -->
+        <div class="hero-img ph-1"></div>
         <div class="hero-copy">
           <h1>ethical beauty,<br><span class="underline">sustainable impact.</span></h1>
           <p>Committed to sustainable beauty and minimizing our impact on the planet.</p>
           <a class="pill" href="#ingredients">about us</a>
         </div>
       </article>
-
       <article class="hero-slide">
-        <div class="hero-img ph-2"></div> <!-- 이미지 1개만 남김 -->
+        <div class="hero-img ph-2"></div>
         <div class="hero-copy">
           <h1>clean formulas,<br><span class="underline">visible glow.</span></h1>
           <p>Plant-based actives, sourced with care and tested on skin, not animals.</p>
           <a class="pill" href="#bestsellers">shop best sellers</a>
         </div>
       </article>
-
       <article class="hero-slide">
-        <div class="hero-img ph-3"></div> <!-- 이미지 1개만 남김 -->
+        <div class="hero-img ph-3"></div>
         <div class="hero-copy">
           <h1>small batches,<br><span class="underline">big care.</span></h1>
           <p>Refillable glass, recycled boxes and a shorter road from farm to bottle.</p>
           <a class="pill" href="#ingredients">our sourcing</a>
         </div>
       </article>
-
       <article class="hero-slide">
-        <div class="hero-img ph-4"></div> <!-- 이미지 1개만 남김 -->
+        <div class="hero-img ph-4"></div>
         <div class="hero-copy">
           <h1>small batches,<br><span class="underline">big care.</span></h1>
           <p>Refillable glass, recycled boxes and a shorter road from farm to bottle.</p>
           <a class="pill" href="#ingredients">our sourcing</a>
         </div>
       </article>
-
       <article class="hero-slide">
-        <div class="hero-img ph-5"></div> <!-- 이미지 1개만 남김 -->
+        <div class="hero-img ph-5"></div>
         <div class="hero-copy">
           <h1>small batches,<br><span class="underline">big care.</span></h1>
           <p>Refillable glass, recycled boxes and a shorter road from farm to bottle.</p>
           <a class="pill" href="#ingredients">our sourcing</a>
         </div>
       </article>
-
       <article class="hero-slide">
-        <div class="hero-img ph-6"></div> <!-- 이미지 1개만 남김 -->
+        <div class="hero-img ph-6"></div>
         <div class="hero-copy">
           <h1>small batches,<br><span class="underline">big care.</span></h1>
           <p>Refillable glass, recycled boxes and a shorter road from farm to bottle.</p>
           <a class="pill" href="#ingredients">our sourcing</a>
         </div>
       </article>
-      
-
     </div>
-
     <div class="hero-controls">
       <button class="dot is-active" aria-label="슬라이드 1"></button>
       <button class="dot" aria-label="슬라이드 2"></button>
@@ -113,119 +82,148 @@
       <button class="dot" aria-label="슬라이드 6"></button>
       <button class="pause" id="heroPause" aria-label="일시정지">❚❚</button>
     </div>
-
   </section>
 
-
-
-
-
-<!-- 2단락: 베스트셀러 슬라이드 -->
-<section class="products" id="bestsellers">
-  <div class="tabs">
-    <button class="tab is-active" data-tab="all">
-      <span class="tab-dot"></span>
-      all
-    </button>
-    <button class="tab" data-tab="best">
-      <span class="tab-dot"></span>
-      best sellers
-    </button>
-    <button class="tab" data-tab="sets">
-      <span class="tab-dot"></span>
-      sets
-    </button>
-  </div>
-
-  <div class="track-wrap">
-    <div class="track" id="track">
-      
-      <!-- [Best Sellers 카테고리 상품들] -->
-      <article class="card" data-category="best">
-        <span class="tag">illuminate</span>
-        <div class="thumb">
-          <a href="shop.html">
-            <div class="k_products1"></div>
-          </a>
-        </div>
-        <h3>Illuminating cleansing gel</h3><p class="price">€36,00</p>
-      </article>
-
-      <article class="card" data-category="best">
-        <span class="tag">unify<br>tighten pores</span>
-        <div class="thumb"><div class="k_products2"></div></div>
-        <h3>Unifying serum spray</h3><p class="price">€34,00</p>
-      </article>
-
-      <article class="card" data-category="best">
-        <span class="tag">natural glow</span>
-        <div class="thumb"><div class="k_products3"></div></div>
-        <h3>Super glow set</h3><p class="price"><span>€82,00</span> <s>€98,00</s></p>
-      </article>
-
-      <article class="card" data-category="best">
-        <span class="tag">protect<br>illuminate</span>
-        <div class="thumb"><div class="k_products4"></div></div>
-        <h3>Radiance day oil</h3><p class="price">€69,00</p>
-      </article>
-
-      <!-- [Sets 카테고리 상품들] (모두 보이도록 style 제거) -->
-      <article class="card" data-category="sets">
-        <span class="tag">hydrate</span>
-        <div class="thumb"><div class="k_products9" style="width: 320px;"></div></div>
-        <h3>Hydrating mist 1</h3><p class="price">€28,00</p>
-      </article>
-
-      <article class="card" data-category="sets">
-        <span class="tag">hydrate</span>
-        <div class="thumb"><div class="k_products5"></div></div>
-        <h3>Hydrating mist 1</h3><p class="price">€28,00</p>
-      </article>
-
-      <article class="card" data-category="sets">
-        <span class="tag">hydrate</span>
-        <div class="thumb"><div class="k_products6"></div></div>
-        <h3>Hydrating mist 2</h3><p class="price">€28,00</p>
-      </article>
-
-      <article class="card" data-category="sets">
-        <span class="tag">hydrate</span>
-        <div class="thumb"><div class="k_products7"></div></div>
-        <h3>Hydrating mist 3</h3><p class="price">€28,00</p>
-      </article>
-
-      <article class="card" data-category="sets">
-        <span class="tag">hydrate</span>
-        <div class="thumb"><div class="k_products8"></div></div>
-        <h3>Hydrating mist 4</h3><p class="price">€28,00</p>
-      </article>
-
+  <!-- 2단락: 베스트셀러 슬라이드 -->
+  <section class="products" id="bestsellers">
+    <div class="tabs">
+      <button class="tab is-active" data-tab="all"><span class="tab-dot"></span>all</button>
+      <button class="tab" data-tab="best"><span class="tab-dot"></span>best sellers</button>
+      <button class="tab" data-tab="sets"><span class="tab-dot"></span>sets</button>
     </div>
-  </div>
 
-  <div class="progress"><span id="progressBar"></span></div>
-</section>
+    <div class="track-wrap">
+      <div class="track" id="track">
+        
+        <!-- [Best 카테고리] -->
+        <article class="card" data-category="best">
+          <div class="card-inner">
+            <div class="thumb">
+              <a href="shop.html" style="width:100%; height:100%;"><div class="k_products1"></div></a>
+            </div>
+            <div class="card-info">
+              <h3>MATCHA ST-01</h3>
+              <div class="meta"><span>[ OIL CONTROL ]</span><span>09:10 AM</span></div>
+              <hr class="divider">
+              <p class="desc">A balancing tea shot designed to help reduce excess shine and refine the look of pores throughout the day.</p>
+              <p class="ingred">MATCHA / GREEN TEA</p>
+              <button class="add-to-cart">[+] ADD TO CART</button>
+            </div>
+          </div>
+        </article>
 
+        <article class="card" data-category="best">
+          <div class="card-inner">
+            <div class="thumb"><div class="k_products2"></div></div>
+            <div class="card-info">
+              <h3>LICORICE LT-02</h3>
+              <div class="meta"><span>[ EVEN TONE ]</span><span>10:24 AM</span></div>
+              <hr class="divider">
+              <p class="desc">A brightening tea shot that helps improve the look of uneven tone and dullness for a clearer-looking complexion.</p>
+              <p class="ingred">LICORICE ROOT / TONING</p>
+              <button class="add-to-cart">[+] ADD TO CART</button>
+            </div>
+          </div>
+        </article>
 
+        <article class="card" data-category="best">
+          <div class="card-inner">
+            <div class="thumb"><div class="k_products3"></div></div>
+            <div class="card-info">
+              <h3>ROOIBOS RB-03</h3>
+              <div class="meta"><span>[ FIRMING ]</span><span>01:18 PM</span></div>
+              <hr class="divider">
+              <p class="desc">A firming tea shot formulated to support smoother-looking skin and a more resilient, supple appearance.</p>
+              <p class="ingred">ROOIBOS / ELASTICITY</p>
+              <button class="add-to-cart">[+] ADD TO CART</button>
+            </div>
+          </div>
+        </article>
 
+        <article class="card" data-category="best">
+          <div class="card-inner">
+            <div class="thumb" style="height: 280px;"><div class="k_products4"></div></div>
+            <div class="card-info">
+              <h3>CHAMOMILE CM-04</h3>
+              <div class="meta"><span>[ SOOTHING ]</span><span>08:42 PM</span></div>
+              <hr class="divider">
+              <p class="desc">A soothing tea shot created to comfort delicate skin and leave it feeling calm and cared for.</p>
+              <p class="ingred">CHAMOMILE / COMFORT</p>
+              <button class="add-to-cart">[+] ADD TO CART</button>
+            </div>
+          </div>
+        </article>
 
+        <!-- [Sets 카테고리] -->
+        <article class="card" data-category="sets">
+          <div class="card-inner">
+            <div class="thumb"><div class="k_products5"></div></div>
+            <div class="card-info">
+              <h3>HYDRATING MIST 1</h3>
+              <div class="meta"><span>[ HYDRATE ]</span><span>11:00 AM</span></div>
+              <hr class="divider">
+              <p class="desc">Refreshing moisture spray for instant glow.</p>
+              <p class="ingred">ALOE / MOISTURE</p>
+              <button class="add-to-cart">[+] ADD TO CART</button>
+            </div>
+          </div>
+        </article>
 
+        <article class="card" data-category="sets">
+          <div class="card-inner">
+            <div class="thumb"><div class="k_products6"></div></div>
+            <div class="card-info">
+              <h3>HYDRATING MIST 2</h3>
+              <div class="meta"><span>[ HYDRATE ]</span><span>12:00 PM</span></div>
+              <hr class="divider">
+              <p class="desc">Refreshing moisture spray for instant glow.</p>
+              <p class="ingred">ALOE / MOISTURE</p>
+              <button class="add-to-cart">[+] ADD TO CART</button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="card" data-category="sets">
+          <div class="card-inner">
+            <div class="thumb"><div class="k_products7"></div></div>
+            <div class="card-info">
+              <h3>HYDRATING MIST 3</h3>
+              <div class="meta"><span>[ HYDRATE ]</span><span>01:00 PM</span></div>
+              <hr class="divider">
+              <p class="desc">Refreshing moisture spray for instant glow.</p>
+              <p class="ingred">ALOE / MOISTURE</p>
+              <button class="add-to-cart">[+] ADD TO CART</button>
+            </div>
+          </div>
+        </article>
 
+        <article class="card" data-category="sets">
+          <div class="card-inner">
+            <div class="thumb"><div class="k_products8"></div></div>
+            <div class="card-info">
+              <h3>HYDRATING MIST 4</h3>
+              <div class="meta"><span>[ HYDRATE ]</span><span>02:00 PM</span></div>
+              <hr class="divider">
+              <p class="desc">Refreshing moisture spray for instant glow.</p>
+              <p class="ingred">ALOE / MOISTURE</p>
+              <button class="add-to-cart">[+] ADD TO CART</button>
+            </div>
+          </div>
+        </article>
 
-  <!-- 3단락: 카테고리 (일반 이미지 + 버튼) -->
+      </div>
+    </div>
+    <div class="progress"><span id="progressBar"></span></div>
+  </section>
+
+  <!-- 3단락: 카테고리 -->
   <section class="categories">
     <a class="cat ph-6" href="#"><h2>face</h2><span class="pill">shop face</span></a>
     <a class="cat ph-7" href="#"><h2>beauty tools</h2><span class="pill">shop beauty tools</span></a>
     <a class="cat ph-8" href="#"><h2>body</h2><span class="pill">shop body</span></a>
   </section>
 
-
-
-
-
-
-
-  <!-- 4단락: 원료 (일반 이미지 + 버튼) -->
+  <!-- 4단락: 원료 -->
   <section class="ingredients" id="ingredients">
     <div class="ing-copy">
       <h2><span class="underline gold">precious ingredients sourcing.</span></h2>

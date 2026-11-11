@@ -85,7 +85,7 @@ main{top: -50px; display: block; position: relative;}
 
 
 /* ===== 1단락: 히어로 슬라이드 ===== */
-.hero{position:relative;height:min(94vh,950px);min-height:420px;overflow:hidden;color:#fff; background: url('./img/main_1_bg.png'); background-size: 70% 70%; top:-50px; }
+.hero{position:relative;height:min(100vh,1050px);min-height:420px;overflow:hidden;color:#fff; background: url('./img/main_1_bg.png'); background-size: 70% 70%; top:-50px; }
 .hero-slide {position: absolute; inset: 0; display: block; /* grid 대신 block 사용 */ width: 100%; height: 100%; opacity: 0; visibility: hidden; transition: opacity .8s,visibility .8s;}
 .hero-slide.is-active{opacity: 1; visibility: visible;}
 .hero-img{width: 100%;  height: 100%;  background-size: cover;}

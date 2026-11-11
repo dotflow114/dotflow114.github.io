@@ -29,17 +29,15 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .ticker-text.fade{opacity:0}
 
 
-/* ===== 헤더 ===== */
-.header{position:absolute;top:22px;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:12px var(--pad);color:#000}
-.logo{font-weight:700;letter-spacing:.04em;font-size:15px}
-.nav{position:absolute;left:50%;transform:translateX(-50%);display:flex;gap:22px;font-size:12px}
-.tools{display:flex;align-items:center;gap:12px;font-size:12px}
-.tools button{font-size:15px;line-height:1}
+/* ===== 헤더 (수정됨) ===== */
+.header{position:absolute; left:0; right:0; z-index:20; display:flex; align-items:center; justify-content:flex-end; padding:12px var(--pad); color:#000; background: #fff; height: 65px;}
+.logo{position:absolute; left:50%; transform:translateX(-50%); font-weight:700; letter-spacing:.04em; font-size:15px;}
+.logo img{width: 100px;}
+.nav{position:relative; display:flex; gap:22px; font-size:12px}
 .burger{display:none;flex-direction:column;gap:5px}
 .burger i{display:block;width:20px;height:1.5px;background:currentColor;transition:transform .25s}
 .burger[aria-expanded="true"] i:first-child{transform:translateY(3.2px) rotate(45deg)}
 .burger[aria-expanded="true"] i:last-child{transform:translateY(-3.2px) rotate(-45deg)}
-
 
 
 
